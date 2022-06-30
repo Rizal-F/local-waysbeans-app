@@ -1,16 +1,28 @@
 import React from "react";
-import Jumbotron from "../../components/landingPage/Jumbotron";
-import ProductSell from "../../components/landingPage/ProductSell";
-import Navbar from "../../components/navbar/Navbar";
+import { useContext } from "react";
+import { UserContext } from "../../contexts/userContext";
+
+import { Footer, Jumbotron, Navbar, ProductSell } from "../../exports";
 
 const HomePage = () => {
   const title = "Homepage";
   document.title = "WaysBeans | " + title;
+
+  const [state, dispatch] = useContext(UserContext);
+
   return (
     <div>
       <Navbar />
       <Jumbotron />
-      <ProductSell />
+      {!state.isLogin ? (
+        <></>
+      ) : (
+        <>
+          <ProductSell />
+        </>
+      )}
+
+      <Footer />
     </div>
   );
 };

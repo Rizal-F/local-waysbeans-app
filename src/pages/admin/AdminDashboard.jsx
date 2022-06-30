@@ -7,7 +7,7 @@ import React, {
 } from "react";
 import AdminTransaction from "../../dummyDatabase/AdminTransaction";
 import { Dialog, Transition } from "@headlessui/react";
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 
 import { API } from "../../config/api";
 import { Cencel, Success } from "../../exports/exportImages";
@@ -198,6 +198,7 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <Transition.Root show={openUpdateTransaction} as={Fragment}>
         <Dialog
           as="div"

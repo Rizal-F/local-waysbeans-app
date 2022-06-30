@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { API } from "../../config/api";
 import { useNavigate } from "react-router-dom";
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 import { UserContext } from "../../contexts/userContext";
 import { Blank, Peniti } from "../../exports/exportImages";
 
@@ -195,6 +195,7 @@ const EditProfile = () => {
           </div>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };

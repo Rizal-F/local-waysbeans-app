@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 import { Guatemala, Peniti } from "../../exports/exportImages";
 
 import { API } from "../../config/api";
@@ -148,6 +148,7 @@ const AddProduct = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

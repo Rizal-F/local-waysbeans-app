@@ -4,7 +4,7 @@ import { ExclamationIcon } from "@heroicons/react/outline";
 
 import { Link, useNavigate } from "react-router-dom";
 import dataProduct from "../../dummyDatabase/Product";
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 import rupiahFormat from "rupiah-format";
 
 import { API } from "../../config/api";
@@ -191,6 +191,7 @@ const Product = () => {
           </table>
         </div>
       </div>
+      <Footer />
 
       <Transition.Root show={open} as={Fragment}>
         <Dialog

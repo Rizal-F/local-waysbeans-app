@@ -1,4 +1,4 @@
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 // import dataProduct from "../../dummyDatabase/Product";
 import rupiahFormat from "rupiah-format";
 
@@ -86,6 +86,7 @@ const DetailProduct = () => {
           </button>
         </div>
       </div>
+      <Footer />
       <Transition.Root show={openAddCart} as={Fragment}>
         <Dialog
           as="div"

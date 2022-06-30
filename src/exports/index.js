@@ -1,6 +1,9 @@
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/navbar/Footer";
 
+import Jumbotron from "../components/landingPage/Jumbotron";
+import ProductSell from "../components/landingPage/ProductSell";
+
 import HomePage from "../pages/customer/HomePage";
 import Profile from "../pages/customer/Profile";
 import Cart from "../pages/customer/Cart";
@@ -21,6 +24,8 @@ import Contact from "../components/chat/Contact";
 export {
   Navbar,
   HomePage,
+  Jumbotron,
+  ProductSell,
   Profile,
   EditProfile,
   Cart,

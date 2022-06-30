@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { Dialog, Transition } from "@headlessui/react";
 import { ExclamationIcon } from "@heroicons/react/outline";
 
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 import { EmptyCart, Guatemala, TrashIco } from "../../exports/exportImages";
 
 import rupiahFormat from "rupiah-format";
@@ -319,6 +319,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"

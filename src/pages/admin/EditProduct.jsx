@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 import { Peniti } from "../../exports/exportImages";
 
 import { API } from "../../config/api";
@@ -184,6 +184,7 @@ const EditProduct = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

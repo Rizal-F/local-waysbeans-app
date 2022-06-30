@@ -1,6 +1,6 @@
 import MyTransaction from "../../dummyDatabase/MyTransaction";
 // import ProfileData from "../../dummyDatabase/ProfileData";
-import { Navbar } from "../../exports";
+import { Footer, Navbar } from "../../exports";
 import { Barcode, Blank, LogoHomePage } from "../../exports/exportImages";
 
 import dateFormat from "dateformat";
@@ -298,6 +298,7 @@ const Profile = () => {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
